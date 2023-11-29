@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+<h1 style="margin:30px auto">{{  title}} </h1>
+
+
+<form enctype = "multipart/form-data" action = "upload" method = "post" >
+
+
+
+    <br> <br> File Uploading
+
+     <input type = "file" name = "file" enctype='multipart/form-data'  required  />
+ <p> <input type = "submit" value = "Upload file" /> </p>
+
+
+</form>
+
+
+
+{% endblock %}

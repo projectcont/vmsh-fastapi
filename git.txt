@@ -1,0 +1,27 @@
+REM https://github.com/projectcont/vmsh-fastapi/
+
+REM F:
+REM cd F:\improve\vmexcel
+REM git init
+REM git branch -m main
+REM git remote add origin https://github.com/projectcont/vmsh-fastapi.git
+
+REM git add -A
+REM git status
+REM git log
+
+
+
+F:; cd F:\improve\vmexcel 
+git commit -a -m  "mobconv 12 oct 2023"
+git push origin main
+REM git push -u -f origin main
+
+pause
+
+
+
+
+
+
+

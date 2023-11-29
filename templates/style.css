@@ -1,0 +1,47 @@
+
+html *, html {font-family: Tahoma,Verdana,Segoe,sans-serif;}
+html {width:100%;}
+div.wrapper {width:700px;  margin:auto; background-color:#afcef3; height:auto; min-height:300px  }
+div.wrapper form  {width:100%;  margin:0 auto 40px auto ; border:1px solid #fff; text-align:center }
+
+div.wrapper form p  {margin:10px 50px ; }
+
+div.wrapper div  {width:80%;  margin:0 auto 0px auto ;  text-align:left }
+
+div.wrapper form input { border:0px solid brown; text-align:center;font-size:20px; line-height:30px cursor:pointer; text-align:center;  margin:auto;  }
+div.wrapper form input[type=submit]
+{width:350px; height:50px;margin:10px auto ;  text-align:center;cursor:pointer;
+background-color:#141677; color:#fff; border:3px outset #141677;
+}
+
+div.wrapper form input[type=text] {width:30px; height:50px; line-height:50px}
+
+div.wrapper form div  {margin:0 auto; text-align:center;  }
+
+h1, h2, h3, h4   { text-align:center;  margin:0px auto; padding:10px 0 }
+h1  { font-size:26px; line-height:30px; padding-top:30px; font-weight:400}
+h2  { font-size:26px;height:30px; line-height:46px}
+h2  { margin:0px auto; padding:0px 0; }
+h5  { margin:0px auto; padding:0px 0; font-size:17px; line-height:20px }
+h4  { margin:20px auto; padding:20px 0; font-size:22px; line-height:30px }
+
+div.notice {border:2px solid #fff; width:60%; font-size:20px; line-height:26px; margin:30px auto; text-align:center;}
+p.performed {color:#0c582c; font-weight:800}
+
+div.wrapper form select {margin:auto}
+div.wrapper form select,  select option  { width:60%; font-size:20px; line-height:26px; text-align:left;}
+
+div.flexcontainer
+
+{ border:0px solid brown ;
+  width:100%; display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  align-content: center;
+  height:100vh;
+margin:auto;
+ }
+ input#pin , input#pin:focus, input#pin:active, input#pin:hover {border:1px solid #1a87f6 ;outline: none; }

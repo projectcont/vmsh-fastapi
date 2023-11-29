@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{%  if (result==2)    -%}
+<h1>{{  title}} </h1>
+<p style="margin:30px auto; text-align:center; "  id="result1" >  {{result_text}} </p>
+<form action="retrieve" method="post" id="form1" >
+    <input type="hidden"  name="retr" value="1" >
+    <input type="submit"  id="submit1"  value="ИЗВЛЕЧЬ ДАННЫЕ ИЗ EXCEL-ФАЙЛА">
+</form>
+
+<div style=" font-size:20px; line-height:30px; display:none; margin:20px; auto;text-align:center" id="process">
+    Выполняется... подождите завершения...
+</div>
+
+<script>
+document.getElementById("submit1").onclick = function() {
+    document.getElementById("form1").style.display="none";
+    document.getElementById("result1").style.display="none";
+     document.getElementById("process").style.display="block";
+ };
+</script>
+
+
+{%  endif  -%}
+
+
+
+{%  if (result==3)    -%}
+<h1>  {{result_text}} </h1>
+<div>{{notice | safe }} </div>
+<h1>{{title}} </h1>
+
+<form action="" method="post"  id="form2" >
+    <input type="hidden"  name="button_tosite" value="1" >
+    <input type="submit"   id="submit2" value="ОТПРАВИТЬ ДАННЫЕ НА САЙТ" >
+</form>
+
+<div style="display:none;font-size:20px; line-height:30px;margin:20px auto;text-align:center" id="process2">
+    Выполняется... подождите завершения...
+</div>
+
+<script>
+document.getElementById("submit2").onclick = function() {
+    document.getElementById("form2").style.display="none";
+     document.getElementById("process2").style.display="block";
+ };
+</script>
+{%  endif  -%}
+
+
+
+
+{%  if (result==4)    -%}
+<h1>{{  title}} </h1>
+<div>{{notice | safe }} </div>
+{%  endif  -%}
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,167 @@
+2023-11-28 17:08:00,326 - INFO - main - main.py- event 
+2023-11-28 17:08:58,652 - INFO - main - main.py- event 
+2023-11-28 17:11:49,100 - ERROR - excel1 - excel1.py- Traceback (most recent call last):
+  File "F:\improve\vmexcel\excel_retrieve\excel1.py", line 29, in excel1_go
+    df = pd.read_excel(file)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 1500, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+ 
+2023-11-28 17:12:46,249 - ERROR - excel1 - excel1.py- 'Œÿ»¡ ¿: ¬≈–Œﬂ“ÕŒ, EXCEL-‘¿…À Õ≈œ–¿¬»À‹ÕŒ√Œ ‘Œ–Ã¿“¿ ' Traceback (most recent call last):
+  File "F:\improve\vmexcel\excel_retrieve\excel1.py", line 29, in excel1_go
+    df = pd.read_excel(file)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 1500, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+ 
+2023-11-28 17:13:56,424 - ERROR - excel1 - excel1.py-  WRONG FORMAT OF EXCEL-FILE Traceback (most recent call last):
+  File "F:\improve\vmexcel\excel_retrieve\excel1.py", line 29, in excel1_go
+    df = pd.read_excel(file)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 1500, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+ 
+2023-11-28 17:15:10,272 - ERROR - excel1 - excel1.py-  WRONG FORMAT OF EXCEL-FILE Traceback (most recent call last):
+  File "F:\improve\vmexcel\excel_retrieve\excel1.py", line 29, in excel1_go
+    df = pd.read_excel(file)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 1500, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+ 
+2023-11-28 17:15:46,120 - ERROR - excel1 - excel1.py-  WRONG FORMAT OF EXCEL-FILE Traceback (most recent call last):
+  File "F:\improve\vmexcel\excel_retrieve\excel1.py", line 29, in excel1_go
+    df = pd.read_excel(file)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 478, in read_excel
+    io = ExcelFile(io, storage_options=storage_options, engine=engine)
+  File "F:\python310\lib\site-packages\pandas\io\excel\_base.py", line 1500, in __init__
+    raise ValueError(
+ValueError: Excel file format cannot be determined, you must specify an engine manually.
+ 
+2023-11-28 17:20:30,586 - ERROR - dispence_clients - dispence_clients.py-  NO ACCESS TO DATABASE Traceback (most recent call last):
+  File "F:\python310\lib\site-packages\mysql\connector\connection_cext.py", line 236, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Access denied for user 'ODBC'@'95.165.134.185' (using password: NO)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 325, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 888, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 491, in checkout
+    rec = pool._do_get()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "F:\python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "F:\python310\lib\site-packages\sqlalchemy\util\compat.py", line 210, in raise_
+    raise exception
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 271, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 386, in __init__
+    self.__connect()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 684, in __connect
+    with util.safe_reraise():
+  File "F:\python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "F:\python310\lib\site-packages\sqlalchemy\util\compat.py", line 210, in raise_
+    raise exception
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 680, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "F:\python310\lib\site-packages\mysql\connector\__init__.py", line 272, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "F:\python310\lib\site-packages\mysql\connector\connection_cext.py", line 85, in __init__
+    self.connect(**kwargs)
+  File "F:\python310\lib\site-packages\mysql\connector\abstracts.py", line 1028, in connect
+    self._open_connection()
+  File "F:\python310\lib\site-packages\mysql\connector\connection_cext.py", line 241, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+mysql.connector.errors.ProgrammingError: 1045 (28000): Access denied for user 'ODBC'@'95.165.134.185' (using password: NO)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\improve\vmexcel\sqlalch\clients\dispence_clients.py", line 33, in dispence
+    dbclients = session.query(Client).all()
+  File "F:\python310\lib\site-packages\sqlalchemy\orm\query.py", line 2772, in all
+    return self._iter().all()
+  File "F:\python310\lib\site-packages\sqlalchemy\orm\query.py", line 2915, in _iter
+    result = self.session.execute(
+  File "F:\python310\lib\site-packages\sqlalchemy\orm\session.py", line 1713, in execute
+    conn = self._connection_for_bind(bind)
+  File "F:\python310\lib\site-packages\sqlalchemy\orm\session.py", line 1552, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "F:\python310\lib\site-packages\sqlalchemy\orm\session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\base.py", line 3315, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\base.py", line 3394, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\base.py", line 3364, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\base.py", line 2198, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "F:\python310\lib\site-packages\sqlalchemy\util\compat.py", line 210, in raise_
+    raise exception
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 325, in connect
+    return _ConnectionFairy._checkout(self)
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 888, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 491, in checkout
+    rec = pool._do_get()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "F:\python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "F:\python310\lib\site-packages\sqlalchemy\util\compat.py", line 210, in raise_
+    raise exception
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 271, in _create_connection
+    return _ConnectionRecord(self)
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 386, in __init__
+    self.__connect()
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 684, in __connect
+    with util.safe_reraise():
+  File "F:\python310\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "F:\python310\lib\site-packages\sqlalchemy\util\compat.py", line 210, in raise_
+    raise exception
+  File "F:\python310\lib\site-packages\sqlalchemy\pool\base.py", line 680, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "F:\python310\lib\site-packages\sqlalchemy\engine\default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "F:\python310\lib\site-packages\mysql\connector\__init__.py", line 272, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "F:\python310\lib\site-packages\mysql\connector\connection_cext.py", line 85, in __init__
+    self.connect(**kwargs)
+  File "F:\python310\lib\site-packages\mysql\connector\abstracts.py", line 1028, in connect
+    self._open_connection()
+  File "F:\python310\lib\site-packages\mysql\connector\connection_cext.py", line 241, in _open_connection
+    raise errors.get_mysql_exception(msg=exc.msg, errno=exc.errno,
+sqlalchemy.exc.ProgrammingError: (mysql.connector.errors.ProgrammingError) 1045 (28000): Access denied for user 'ODBC'@'95.165.134.185' (using password: NO)
+(Background on this error at: https://sqlalche.me/e/14/f405)
+ 

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{{title}}</title>
+    <meta charset="UTF-8" />
+    <!--
+    <link href="/templates/style.css" rel="stylesheet">
+    -->
+    <link href="{{ url_for('static2', path='/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="flexcontainer">
+    <div class="wrapper">
+    {% block content %} {% endblock %}
+    </div>
+</div>
+
+</body>
+
+</html>
