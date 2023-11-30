@@ -1,12 +1,4 @@
 # DEFINE THE DATABASE CREDENTIALS
-# webrel
-__dbconf = dict(
-    user='vkcntoread_vm',
-    password='n26suNeg9',
-    host='VH222.sweb.ru',
-    port=3306,
-    database='vkcntoread_vm'
-)
 
 dbconf = dict(
     user='',

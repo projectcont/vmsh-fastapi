@@ -107,6 +107,8 @@ def do_retrieve(request: Request, retr: str = Form(default="0"), button_tosite: 
 
             # ----------- retrieving from excel --------------
             prlist_kurs, prlist_client = excel1_go(excelpath, 0)
+            print('курс',prlist_kurs[0])
+            print('клиент', prlist_client[0])
             # ----------- retrieving from excel --------------
 
             print('КУРСОВ ИЗВЛЕЧЕНО =', len(prlist_kurs))
